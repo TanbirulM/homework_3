@@ -57,14 +57,15 @@ table{
   color: #FFFFFF;
   min-width: 125px;
   padding: 10px;
+  text-transform: uppercase;
   text-align: center;
   vertical-align: middle;
-  text-transform: uppercase;
 }
 
 .rowhead{
   border-width: 2px;
   text-align: center;
+  border-color: #000000;
 }
 
 td{
@@ -74,7 +75,7 @@ td{
 }
 
 tr{
-
+  
 }
 
 *:focus{
