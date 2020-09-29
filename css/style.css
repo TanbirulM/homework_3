@@ -41,15 +41,16 @@ p{
 }
 
 a{
+  text-decoration: wavy underline;
   font-size: 16 px;
   color: #C12258;
-  text-decoration: wavy underline;
 }
 
 table{
-    border: 2px solid #000000;
-    border-radius: 10px;
-    margin: auto;
+  margin: auto;
+  border-color: #000000;
+  border: 2px solid;
+  border-radius: 10px;
 }
 
 .colhead{
@@ -63,19 +64,21 @@ table{
 }
 
 .rowhead{
+  border-right: solid;
+  border-top: solid;
+  border-right: 2px;
+  border-top: 2px;
   border-width: 2px;
   text-align: center;
   border-color: #000000;
 }
 
 td{
+  border-top-color: #000000;
+  border-top: solid;
+  border-top: 2px;
   text-align: center;
-  border-top: 2px solid #000000;
   padding: 10px;
-}
-
-tr{
-  
 }
 
 *:focus{
@@ -85,7 +88,26 @@ tr{
   border-width: 3px;
 }
 
-thead tr:first-child th:first-child{}
+tbody tr:last-child th:last-child{
+  border-bottom-left-radius: 10px;
+}
+thead tr:first-child th:first-child{
+  border-top-left-radius: 10px;
+}
+tbody tr:last-child th:first-child{
+  border-bottom-left-radius: 10px;
+}
+tbody tr:last-child td:last-child{
+  border-bottom-right-radius: 10px;
+}
+
+tr:nth-child(even){
+  background-color: #D1D1D1;
+}
+
+tr:hover{
+  background-color: rgb(126, 8, 32);
+}
 
 footer{
   width:100%;
